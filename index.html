@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+      <link rel='stylesheet' href='src/styles.css'>
+      
+       <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+   integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+   crossorigin=""/>
+       <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+   integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+   crossorigin=""></script>
+      <script defer src='src/index.js'></script>
+  <title>Frontend Mentor | IP Address Tracker</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; position:   fixed;left:0;bottom:20px; text-align:center;width:100%;z-index:999 }
+    .attribution a { color: hsl(228, 45%, 44%);}
+  </style>
+</head>
+<body>
+
+    
+    <div class='header'>
+        <h2>IP Address Tracker</h2>
+        <div class='form'>
+              <input  id='ip_address' type='text' placeholder ='Search for any IP address or domain'>
+              <button onclick="TrackIp()"><img src='images/icon-arrow.svg'></button>
+        </div>
+        <div class='info'>
+            <div><h4>IP Address</h4><h3 id='ip_out'>_ _ _ _</h3></div>
+            <div><h4> Location</h4><h3 id='loc_out'>_ _ _ _ _ </h3></div>
+            <div><h4>Timezone</h4><h3 id='utc_out'>_ _ _ _ _</h3></div>
+            <div><h4>ISP</h4><h3 id='isp_out'>_ _ _ _ _</h3></div>
+        </div>
+    </div>
+    
+          <div class='container'>
+
+          
+          <div id="map_container"> </div>
+          
+         </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/ivan-tana">Ivan tana</a>.
+  </div>
+</body>
+</html>
